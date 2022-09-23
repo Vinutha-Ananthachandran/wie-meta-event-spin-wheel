@@ -1,0 +1,61 @@
+body,html{
+  margin: 0;
+  background-color: #051D37;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+}
+
+.container .bgd{
+  width: 100%;
+  height: 100%;
+}
+
+.container .btn{
+  position: absolute;
+  top: 50%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #0080FB;
+  font-size: 48px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  height: 175px;
+  width: 175px;
+  box-shadow: 0 8px 16px 0 white;
+}
+
+.container .btn:hover{
+  height: 185px;
+  width: 185px;
+  box-shadow: 0 8px 16px 0 #0080FB;
+  animation: mymove 5s;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 5px 5px 5px #0080FB;}
+}
+
+.mvg{
+  animation: mvg 30s linear infinite;
+  color: white;
+  font-size: 16px;
+  font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+  font-style: italic;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+@keyframes mvg {
+       0%   {
+       transform: translateX(100%);
+       }
+       100% {
+       transform: translateX(-60%);
+       }
+}
